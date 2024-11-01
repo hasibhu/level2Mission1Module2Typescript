@@ -14,8 +14,14 @@
     };
 
     
+    interface SmartWatch {
+        brand: string;
+        model: string;
+        display: string;
+        bloodCalc?:boolean
+    }
 
-    const poorDeveloper: Developer<T> = {
+    const poorDeveloper: Developer<SmartWatch> = {
         name: 'hasib',
         computer: {
             brand: 'apple',
@@ -30,7 +36,7 @@
     }
 
 
-    const richDeveloper: Developer = {
+    const richDeveloper: Developer<SmartWatch> = {
         name: 'hasib',
         computer: {
             brand: 'apple',
@@ -47,7 +53,7 @@
 
 
 
-
+// console.log(poorDeveloper, richDeveloper);
 
 
     //
